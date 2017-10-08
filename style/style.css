@@ -1,3 +1,9 @@
+body {
+	background-color: #FFF;
+	font-family: Arial, "Times New Roman", Tahoma;
+	text-align: center;
+}
+
 div[class^="col-"] {
       height: 100px; text-align: center; border: 2px solid black;
 }
