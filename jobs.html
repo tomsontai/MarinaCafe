@@ -31,16 +31,65 @@
 			<div class="row">
 				<div class="col-xs-3 side-nav">
 					<ul class="nav nav-pills nav-stacked">
-						<li class="active"><a href="index.html">Home</a>
+						<li><a href="index.html">Home</a>
 						<li><a href="menu.html">Menu</a>
 						<li><a href="performances.html">Performances</a>
-						<li><a href="jobs.html">Jobs</a>
+						<li class="active"><a href="jobs.html">Jobs</a>
 					</ul> <br />
 				</div>
 				
-				<div class="xs-9">
-					TEXT
+				<div class="xs-3">
+					<p>Are you a college student who would like a part time job? </p>
+					
+					<p>Apply at Marina Cafe -- we will work around your school schedule.</p>
+					
+					<p>Complete the information form at the right to get the application process started. </p>
+					
+					<p>Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.</p>
+					
+					<p>Marina Cafe is an equal opportunity employer.</p>
+					
+					<p>We celebrate the diversity of our associates!</p>
 				</div>
+				<div class="xs-6">
+					<form action="jobs_application.php" method="post">
+						
+						Name: 
+							<input type="text" name="Name" placeholder="Enter name" required="required"/>
+						<br />
+						E-mail: 
+							<input type="email" name="Email" placeholder="Enter email" required="required"/>
+						<br />
+						Phone: 
+							<input type="tel" name="telephone" placeholder="Enter phone #" required="required"/>
+						<br />
+						Please select the job roles you are interested in:
+						<br />
+							<input type="checkbox" name="job" value="Bar Associate" />Bar Associate <br />
+							<input type="checkbox" name="job" value="Server" />Server <br />
+							<input type="checkbox" name="job" value="Cleaning and Maintenance" />Cleaning & Maintenace <br />
+							<input type="checkbox" name="job" value="Manager" />Manager <br />
+						
+						<br />
+						Employment type: 
+						Part-time
+						Full-time
+						<br />
+						Gender: 
+						Male
+						Female
+						<br />
+						Years of Experience
+						Pick One
+						<br />
+						Comments
+						<br />
+						<input type="submit" value="Submit"/>
+						<input type="reset"/>
+						
+					</form>
+				</div>
+				
 				
 			</div>
 		

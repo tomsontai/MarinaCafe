@@ -1,7 +1,6 @@
 body {
 	background-color: #FFF;
 	font-family: Arial, "Times New Roman", Tahoma;
-	text-align: center;
 }
 
 div[class^="col-"] {
