@@ -38,7 +38,7 @@
 					</ul> <br />
 				</div>
 				
-				<div class="xs-3">
+				<div class="col-xs-3">
 					<p>Are you a college student who would like a part time job? </p>
 					
 					<p>Apply at Marina Cafe -- we will work around your school schedule.</p>
@@ -51,7 +51,7 @@
 					
 					<p>We celebrate the diversity of our associates!</p>
 				</div>
-				<div class="xs-6">
+				<div class="col-xs-6">
 					<form action="jobs_application.php" method="post">
 						
 						Name: 
@@ -72,21 +72,29 @@
 						
 						<br />
 						Employment type: 
-						Part-time
-						Full-time
+							<input type="radio" name="employment_time" value="Part-time" />Part-time
+							<input type="radio" name="employment_time" value="Full-time" />Full-time
 						<br />
 						Gender: 
-						Male
-						Female
+							<input type="radio" name="gender" value="Male" />Male
+							<input type="radio" name="gender" value="Female" />Female
 						<br />
 						Years of Experience
-						Pick One
+							<select name="experience" size="1"> Pick One
+								<option value="0">Pick One</option>
+								<option value="No experience">No experience</option>
+								<option value="Less than 1 year.">Less than 1 year</option>
+								<option value="2 years">2 years</option>
+								<option value="More than 3 years">More than 3 years</option>
+							</select>
 						<br />
-						Comments
+						Comments: 
+							<textarea name="Comment" rows="5" cols="30" placeholder="Comments..."></textarea>
 						<br />
-						<input type="submit" value="Submit"/>
-						<input type="reset"/>
-						
+						<div class="btn-group">
+							<input class="btn-success" type="submit" value="Submit"/>
+							<input class="btn-danger" type="reset"/>
+						</div>
 					</form>
 				</div>
 				
