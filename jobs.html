@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="style/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -85,12 +87,38 @@
 		<div class="form-group">
 			<label for="phone">Phone:</label>
 			<input type="text" class="form-control" data-format="+1 (ddd) ddd-dddd" id="phone">
-		<div class="form-group">
-			<label for="pwd">Password:</label>
-			<input type="password" class="form-control" id="pwd">
+		<div><p><br />Please select the types of jobs you are interested in:</p></div>
+		<div class="checkbox">
+			<label><input type="checkbox" name="checkbox">Bar Associate</input></label>
+		<div class="checkbox">
+			<label><input type="checkbox" name="checkbox">Server</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox"> Remember me</label>
+			<label><input type="checkbox" name="checkbox">Cleaning &amp; Maintenance</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" name="checkbox">Manager</label>
+		</div>
+		<div class="radio-inline">
+			<label><input type="radio" name="radio">Part-time</label>
+			<label><input type="radio" name="radio">Full-time</label>
+		</div>
+		<div class="radio-inline">
+			<label><input type="radio" name="radio">Male</label>
+			<label><input type="radio" name="radio">Female</label>
+		</div>
+		<div class="form-group">
+			<label for "sel1">Pick one</label>
+			<select class="form-control" id="sel1">
+				<option value="1">1 year of experience</option>
+				<option value="2">2 years of experience</option>
+				<option value="3">3 years of experience</option>
+				<option value="3+">More than 3 years of experience</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="5" id="comment"></textarea>
 		</div>
 			<button type="submit" class="btn btn-default">Submit</button>
 	</form>
