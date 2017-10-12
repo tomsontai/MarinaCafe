@@ -9,100 +9,65 @@
 </head>
 
 <body>
-
-		<div class="container">
-
-			<div class="row content">
-			
-				<div class="hidden-xs">
-					<div class="col-xs-3">
-						<img src="images/Logo.png" alt="Marina Cafe Logo" />
-					</div>
-					<div class="col-xs-1">&nbsp;</div>
-				</div>
-			
-				
-				
-				<div class="col-xs-8">			
-					<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-xs-3 side-nav">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="index.html">Home</a>
-						<li><a href="menu.html">Menu</a>
-						<li><a href="performances.html">Performances</a>
-						<li class="active"><a href="jobs.html">Jobs</a>
-					</ul> <br />
-				</div>
-				
-				<div class="col-xs-3">
-					<p>Are you a college student who would like a part time job? </p>
-					
-					<p>Apply at Marina Cafe -- we will work around your school schedule.</p>
-					
-					<p>Complete the information form at the right to get the application process started. </p>
-					
-					<p>Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.</p>
-					
-					<p>Marina Cafe is an equal opportunity employer.</p>
-					
-					<p>We celebrate the diversity of our associates!</p>
-				</div>
-				<div class="col-xs-6">
-					<form action="jobs_application.php" method="post">
-						
-						Name: 
-							<input type="text" name="Name" placeholder="Enter name" required="required"/>
-						<br />
-						E-mail: 
-							<input type="email" name="Email" placeholder="Enter email" required="required"/>
-						<br />
-						Phone: 
-							<input type="tel" name="telephone" placeholder="Enter phone #" required="required"/>
-						<br />
-						Please select the job roles you are interested in:
-						<br />
-							<input type="checkbox" name="job" value="Bar Associate" />Bar Associate <br />
-							<input type="checkbox" name="job" value="Server" />Server <br />
-							<input type="checkbox" name="job" value="Cleaning and Maintenance" />Cleaning & Maintenace <br />
-							<input type="checkbox" name="job" value="Manager" />Manager <br />
-						
-						<br />
-						Employment type: 
-							<input type="radio" name="employment_time" value="Part-time" />Part-time
-							<input type="radio" name="employment_time" value="Full-time" />Full-time
-						<br />
-						Gender: 
-							<input type="radio" name="gender" value="Male" />Male
-							<input type="radio" name="gender" value="Female" />Female
-						<br />
-						Years of Experience
-							<select name="experience" size="1"> Pick One
-								<option value="0">Pick One</option>
-								<option value="No experience">No experience</option>
-								<option value="Less than 1 year.">Less than 1 year</option>
-								<option value="2 years">2 years</option>
-								<option value="More than 3 years">More than 3 years</option>
-							</select>
-						<br />
-						Comments: 
-							<textarea name="Comment" rows="5" cols="30" placeholder="Comments..."></textarea>
-						<br />
-						<div class="btn-group">
-							<input class="btn-success" type="submit" value="Submit"/>
-							<input class="btn-danger" type="reset"/>
-						</div>
-					</form>
-				</div>
-				
-				
-			</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="index.html">Marina Cafe</a>
+		</div>
 		
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="performances.html">Performances</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+		<div class="container-fluid">
+		<div class="jumbotron">
+			
+			<br />
+			<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />      
+			For all your coffee needs.</p>
+			
+		</div> 
+	</div>
 
-			<div class="row">
+  <div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">November 2011</div>
+        <div class="panel-body"><img src="images/JTGray.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">J. T. Gray will be back to entertain us with his unique folk music.</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">December 2011</div>
+        <div class="panel-body"><img src="images/BrianArrowwood.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Bryan Arrowwood will sooth your soul with his violin music!</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">March</div>
+        <div class="panel-body"><img src="images/karaoke.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Karaoke night!<br /><br /></div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+		<div class="row">
 				<div class="col-xs-12">
 					667 Lawrence Ave <br/>
 					Kelowna, BC V1Y 6L8 <br/>
@@ -110,15 +75,15 @@
 				</div>	
 			</div>
 			
-			<div class="row bg-danger">
-				<div class="col-xs-12">Copyright &copy; </div> 
+			<footer class="container-fluid text-center">
+				<div class="text-right">
+					<p>
+						667 Lawrence Ave <br/>
+						Kelowna, BC V1Y 6L8 <br/>
+						1-888-888-8888
+					</p>
+				</div>
 				
-			</div>
-			
-			<div class="row bg-danger">
-				<div class="col-xs-12><a href="mai&#108;to&#58;%&#54;Da%72%&#54;9&#110;a&#64;%6Dari&#37;6E&#97;c&#37;61&#102;e&#46;c&#111;m">Marina Cafe</a></div>
-			</div>
-
-		</div>
-</body>
-</html>
+				<p>Copyright &copy;</p>  
+				<a href="mai&#108;to&#58;%&#54;Da%72%&#54;9&#110;a&#64;%6Dari&#37;6E&#97;c&#37;61&#102;e&#46;c&#111;m">Marina Cafe</a>
+			</footer>
