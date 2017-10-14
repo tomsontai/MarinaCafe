@@ -13,8 +13,10 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-    margin: auto;
+	width: auto;
 }
 
-
-
+#menu-images {
+	height: 200px;
+	margin: auto;
+}
