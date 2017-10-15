@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<title>Marina Cafe - Jobs</title>
@@ -10,7 +12,6 @@
 
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-<<<<<<< HEAD
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,200 +41,79 @@
 			<center>
 			<br />
 			<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />      
-			
-			<p>
 				<h6 class="visible-xs">Made with 100% Java beans.</h6>
                 <h5 class="visible-sm">Made with 100% Java beans.</h5>
                 <h4 class="visible-md">Made with 100% Java beans.</h4>
                 <h3 class="visible-lg">Made with 100% Java beans.</h3>
-			</p>
 			</center>
 		</div> 
 	</div>
-	<form>
-		<div class="form-group">
-			<label for ="name">Name:</label>
-			<input type=text class="form-control" id="name">
-		</div>
-		<div class="form-group">
-			<label for="email">Email address:</label>
-			<input type="email" class="form-control" id="email">
-		</div>
-		<div class="form-group">
-			<label for="phone">Phone:</label>
-			<input type="text" class="form-control" data-format="+1 (ddd) ddd-dddd" id="phone">
-		<br />
-		<div class="label">Please select the types of jobs you are interested in:</div>
-		<div class="checkbox">
-			<label><input type="checkbox" name="checkbox">Bar Associate</input></label>
-		<div class="checkbox">
-			<label><input type="checkbox" name="checkbox">Server</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" name="checkbox">Cleaning &amp; Maintenance</label>
-		</div>
-		<div class="checkbox">
-			<label><input type="checkbox" name="checkbox">Manager</label>
-		</div>
-		Employment type:
-		<div class="radio-inline">
-			<label><input type="radio" name="radio">Part-time</label>
-			<label><input type="radio" name="radio">Full-time</label>
-		</div>
-		<br />
-		Gender:
-		<div class="radio-inline">
-			<label><input type="radio" name="radio">Male</label>
-			<label><input type="radio" name="radio">Female</label>
-		</div>
-		<br />
-		<br />
-		<div class="form-group">
-			<label for "sel1">Years of experience:</label>
-			<select class="form-control" id="sel1">
-				<option value="1">1 year of experience</option>
-				<option value="2">2 years of experience</option>
-				<option value="3">3 years of experience</option>
-				<option value="3+">More than 3 years of experience</option>
-			</select>
-		</div>
-		<div class="form-group">
-			<label for="comment">Comment:</label>
-			<textarea class="form-control" rows="5" id="comment"></textarea>
-		</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-	</form>
-	
-	
-		
-=======
-	  <div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<!-- This creates the "hamburger" -->
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-			</button>
-			<!-- Java logo from Java -->
-			<a class="navbar-brand" href="index.html"><img src="images/java.gif" alt="Java is cool"/></a>
-			<!-- Logo on the Nav-Bar -->
-		</div>
-		
-		<!-- collapsable menu -->
-		<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="menu.html">Menu</a></li>
-			<li><a href="performances.html">Performances</a></li>
-			<li class="active"><a href="jobs.html">Jobs</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-
 	<div class="container-fluid">
-		<div class="jumbotron">
-			<center>
-			<br />
-			<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />      
-			
-			<p>
-				<h6 class="visible-xs">Made with 100% Java beans.</h6>
-                <h5 class="visible-sm">Made with 100% Java beans.</h5>
-                <h4 class="visible-md">Made with 100% Java beans.</h4>
-                <h3 class="visible-lg">Made with 100% Java beans.</h3>
-			</p>
-			</center>
-		</div> 
-	</div>
-	
-	<div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-				<!-- http://retaildesignblog.net/wp-content/uploads/2012/08/Cafe-Cafe-Prague-04.jpg -->
-				<center><img src="images/Cafe.gif" alt="Cafe Interior" class="img-responsive img-circle" /></center>
-                <h6 class="visible-xs">Imported Java beans fresh straight from Eclipse.</h6>
-                <h5 class="visible-sm">Imported Java beans fresh straight from Eclipse.</h5>
-                <h4 class="visible-md">Imported Java beans fresh straight from Eclipse.</h4>
-                <h3 class="visible-lg">Imported Java beans fresh straight from Eclipse.</h3>
+		<form action="job_applications.php" method="post">
+			<div class="form-group">
+				<label for ="name">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter name">
 			</div>
-		</div>
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter email">
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+			</div>
+		<br />
+			<label>Please select the types of jobs you are interested in: </label>
+			<div class="checkbox">
+				<label><input type="checkbox" value="true" name="bar"> Bar Associate</label>
+				<label><input type="checkbox" value="true" name="server"> Server</label>
+				<label><input type="checkbox" value="true" name="cleaner">Cleaning &amp; Maintenance</label>
+				<label><input type="checkbox" value="true" name="manager">Manager</label>
+			</div>
+		<br />
+		<br />
+			<label class="radio-control">Employment type: </label>
+			<div class="radio">
+				<label class="radio-inline">
+					<input type="radio" value="part" name="employment">Part-time
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="full" name="employment">Full-time
+				</label>
+			</div>
+		<br />
+			<label class="radio-control">Gender: </label>
+			<div class="radio">
+				<label class="radio-inline">
+					<input type="radio" value="male" name="gender">Male
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="female" name="gender">Female
+				</label>
+			</div>
+		<br />
+			<div class="form-group">
+				<label>Years of experience:</label>
+				<select class="form-control" id="sel1">
+					<option value="0">No experience</option>
+					<option value="<1">Less than 1 year</option>
+					<option value=">1">More than 1 year</option>
+				</select>
+			</div>
+		<br />
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment" placeholder="Enter comments here"></textarea>
+			</div>
+		</form>
 	</div>
-				
-				<div class="col-xs-3">
-					<p>Are you a college student who would like a part time job? </p>
-					
-					<p>Apply at Marina Cafe -- we will work around your school schedule.</p>
-					
-					<p>Complete the information form at the right to get the application process started. </p>
-					
-					<p>Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.</p>
-					
-					<p>Marina Cafe is an equal opportunity employer.</p>
-					
-					<p>We celebrate the diversity of our associates!</p>
-				</div>
-				<div class="col-xs-6">
-					<form action="jobs_application.php" method="post">
-						
-						Name: 
-							<input type="text" name="Name" placeholder="Enter name" required="required"/>
-						<br />
-						E-mail: 
-							<input type="email" name="Email" placeholder="Enter email" required="required"/>
-						<br />
-						Phone: 
-							<input type="tel" name="telephone" placeholder="Enter phone #" required="required"/>
-						<br />
-						Please select the job roles you are interested in:
-						<br />
-							<input type="checkbox" name="job" value="Bar Associate" />Bar Associate <br />
-							<input type="checkbox" name="job" value="Server" />Server <br />
-							<input type="checkbox" name="job" value="Cleaning and Maintenance" />Cleaning & Maintenace <br />
-							<input type="checkbox" name="job" value="Manager" />Manager <br />
-						
-						<br />
-						Employment type: 
-							<input type="radio" name="employment_time" value="Part-time" />Part-time
-							<input type="radio" name="employment_time" value="Full-time" />Full-time
-						<br />
-						Gender: 
-							<input type="radio" name="gender" value="Male" />Male
-							<input type="radio" name="gender" value="Female" />Female
-						<br />
-						Years of Experience
-							<select name="experience" size="1"> Pick One
-								<option value="0">Pick One</option>
-								<option value="No experience">No experience</option>
-								<option value="Less than 1 year.">Less than 1 year</option>
-								<option value="2 years">2 years</option>
-								<option value="More than 3 years">More than 3 years</option>
-							</select>
-						<br />
-						Comments: 
-							<textarea name="Comment" rows="5" cols="30" placeholder="Comments..."></textarea>
-						<br />
-						<div class="btn-group">
-							<input class="btn-success" type="submit" value="Submit"/>
-							<input class="btn-danger" type="reset"/>
-						</div>
-					</form>
-				</div>
-				
->>>>>>> 785666c0753e9ed069b8310fbf3623e20b9adfa7
-				
-			
-		
-
+	<button type="submit" class="btn btn-default">Submit</button>
 	<footer class="container-fluid text-center">
 		<div class="text-right">
-			<p>
 				<h6 class="visible-xs">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h6>
 				<h5 class="visible-sm">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h5>
 				<h4 class="visible-md">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h4>
 				<h3 class="visible-lg">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h3>
-			</p>
 		</div>
 				
 		<p>Copyright &copy;</p>  
