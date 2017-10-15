@@ -2,123 +2,120 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Marina Cafe</title>
+	<title>Marina Cafe - Jobs</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="style/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-		<div class="container">
-
-			<div class="row content">
-			
-				<div class="hidden-xs">
-					<div class="col-xs-3">
-						<img src="images/Logo.png" alt="Marina Cafe Logo" />
-					</div>
-					<div class="col-xs-1">&nbsp;</div>
-				</div>
-			
-				
-				
-				<div class="col-xs-8">			
-					<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />
-				</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<!-- This creates the "hamburger" -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<!-- Java logo from Java -->
+				<a class="navbar-brand" href="index.html"><img src="images/java.gif" alt="Java is cool"/></a>
+				<!-- Logo on the Nav-Bar -->
 			</div>
 			
-			<div class="row">
-				<div class="col-xs-3 side-nav">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="index.html">Home</a>
-						<li><a href="menu.html">Menu</a>
-						<li><a href="performances.html">Performances</a>
-						<li class="active"><a href="jobs.html">Jobs</a>
-					</ul> <br />
-				</div>
-				
-				<div class="col-xs-3">
-					<p>Are you a college student who would like a part time job? </p>
-					
-					<p>Apply at Marina Cafe -- we will work around your school schedule.</p>
-					
-					<p>Complete the information form at the right to get the application process started. </p>
-					
-					<p>Or, if you prefer, stop by Marina Cafe any time and ask about employment opportunities.</p>
-					
-					<p>Marina Cafe is an equal opportunity employer.</p>
-					
-					<p>We celebrate the diversity of our associates!</p>
-				</div>
-				<div class="col-xs-6">
-					<form action="jobs_application.php" method="post">
-						
-						Name: 
-							<input type="text" name="Name" placeholder="Enter name" required="required"/>
-						<br />
-						E-mail: 
-							<input type="email" name="Email" placeholder="Enter email" required="required"/>
-						<br />
-						Phone: 
-							<input type="tel" name="telephone" placeholder="Enter phone #" required="required"/>
-						<br />
-						Please select the job roles you are interested in:
-						<br />
-							<input type="checkbox" name="job" value="Bar Associate" />Bar Associate <br />
-							<input type="checkbox" name="job" value="Server" />Server <br />
-							<input type="checkbox" name="job" value="Cleaning and Maintenance" />Cleaning & Maintenace <br />
-							<input type="checkbox" name="job" value="Manager" />Manager <br />
-						
-						<br />
-						Employment type: 
-							<input type="radio" name="employment_time" value="Part-time" />Part-time
-							<input type="radio" name="employment_time" value="Full-time" />Full-time
-						<br />
-						Gender: 
-							<input type="radio" name="gender" value="Male" />Male
-							<input type="radio" name="gender" value="Female" />Female
-						<br />
-						Years of Experience
-							<select name="experience" size="1"> Pick One
-								<option value="0">Pick One</option>
-								<option value="No experience">No experience</option>
-								<option value="Less than 1 year.">Less than 1 year</option>
-								<option value="2 years">2 years</option>
-								<option value="More than 3 years">More than 3 years</option>
-							</select>
-						<br />
-						Comments: 
-							<textarea name="Comment" rows="5" cols="30" placeholder="Comments..."></textarea>
-						<br />
-						<div class="btn-group">
-							<input class="btn-success" type="submit" value="Submit"/>
-							<input class="btn-danger" type="reset"/>
-						</div>
-					</form>
-				</div>
-				
-				
+			<!-- collapsable menu -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="performances.html">Performances</a></li>
+					<li class="active"><a href="jobs.html">Jobs</a></li>
+				</ul>
 			</div>
-		
-
-			<div class="row">
-				<div class="col-xs-12">
-					667 Lawrence Ave <br/>
-					Kelowna, BC V1Y 6L8 <br/>
-					1-888-888-8888
-				</div>	
-			</div>
-			
-			<div class="row bg-danger">
-				<div class="col-xs-12">Copyright &copy; </div> 
-				
-			</div>
-			
-			<div class="row bg-danger">
-				<div class="col-xs-12><a href="mai&#108;to&#58;%&#54;Da%72%&#54;9&#110;a&#64;%6Dari&#37;6E&#97;c&#37;61&#102;e&#46;c&#111;m">Marina Cafe</a></div>
-			</div>
-
 		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<br />
+			<img src="images/Banner.png" alt="Marina Cafe Banner" class="img-responsive" />      
+				<h6 class="visible-xs">Made with 100% Java beans.</h6>
+                <h5 class="visible-sm">Made with 100% Java beans.</h5>
+                <h4 class="visible-md">Made with 100% Java beans.</h4>
+                <h3 class="visible-lg">Made with 100% Java beans.</h3>
+		</div> 
+	</div>
+	<div class="container-fluid">
+		<form action="job_applications.php" method="post">
+			<div class="form-group">
+				<label for ="name">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter email">
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+			</div>
+		<br />
+			<label>Please select the types of jobs you are interested in: </label>
+			<div class="checkbox">
+				<label><input type="checkbox" value="true" name="bar"> Bar Associate</label>
+				<label><input type="checkbox" value="true" name="server"> Server</label>
+				<label><input type="checkbox" value="true" name="cleaner">Cleaning &amp; Maintenance</label>
+				<label><input type="checkbox" value="true" name="manager">Manager</label>
+			</div>
+		<br />
+		<br />
+			<label class="radio-control">Employment type: </label>
+			<div class="radio">
+				<label class="radio-inline">
+					<input type="radio" value="part" name="employment">Part-time
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="full" name="employment">Full-time
+				</label>
+			</div>
+		<br />
+			<label class="radio-control">Gender: </label>
+			<div class="radio">
+				<label class="radio-inline">
+					<input type="radio" value="male" name="gender">Male
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="female" name="gender">Female
+				</label>
+			</div>
+		<br />
+			<div class="form-group">
+				<label>Years of experience:</label>
+				<select class="form-control" id="sel1">
+					<option value="0">No experience</option>
+					<option value="<1">Less than 1 year</option>
+					<option value=">1">More than 1 year</option>
+				</select>
+			</div>
+		<br />
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment" placeholder="Enter comments here"></textarea>
+			</div>
+		</form>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+	<footer class="container-fluid text-center">
+		<div class="text-right">
+				<h6 class="visible-xs">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h6>
+				<h5 class="visible-sm">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h5>
+				<h4 class="visible-md">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h4>
+				<h3 class="visible-lg">667 Lawrence Ave <br/>Kelowna, BC V1Y 6L8 <br/>1-888-888-8888</h3>
+		</div>
+				
+		<p>Copyright &copy;</p>  
+			<a href="mai&#108;to&#58;%&#54;Da%72%&#54;9&#110;a&#64;%6Dari&#37;6E&#97;c&#37;61&#102;e&#46;c&#111;m">Marina Cafe</a>
+	</footer>
 </body>
 </html>
