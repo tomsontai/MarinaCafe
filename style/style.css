@@ -39,3 +39,9 @@ div.radio {
 	display: inline;
 }
 
+.panel > .panel-heading {
+    background-image: none;
+    background-color: brown;
+    color: white;
+
+}
