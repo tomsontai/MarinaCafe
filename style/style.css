@@ -45,3 +45,9 @@ div.radio {
     color: white;
 
 }
+
+.jumbotron img {
+	display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
